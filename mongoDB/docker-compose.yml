@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  db:
+    image: mongo
+    container_name: db
+    restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=dio
+      - MONGO_INITDB_ROOT_PASSWORD=dio
+    ports:
+      - "27017:27017"
+    volumes:
+      - /Users/belat/Desktop/portfolio/cursos/dio-desafios/mongoDB/arq
+    
